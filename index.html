@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans&family=Montserrat&family=Poppins&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+<section class="pag1">
+
+    <div class="main">
+         <div class="gerador">
+                <h1>Password Generator</h1>
+                <span>Size <span id="valor"></span>characters</span>
+                <input id="slider" class="slider" type="range" min="5" max="30" value="10">
+            <div class="verificar">
+                <div class="letrasminusculas">
+                    <label for="verificarminusculas">Lowercase letters</label> 
+                    <input id="verificarminusculas" type="checkbox">   
+            
+                </div>
+                <div class="letrasmaisculas">
+                    <label for="verificarmaiusculas">Uppercase letters</label> 
+                    <input id="verificarmaiusculas" type="checkbox">   
+           
+                </div>
+                <div class="numeros">
+                     <label for="verificarnumeros">Numbers</label> 
+                     <input id="verificarnumeros" type="checkbox">   
+            
+                </div>
+                <div class="simbolos">
+                    <label for="verificarsimbolos">Symbols</label> 
+                    <input id="verificarsimbolos" type="checkbox">  
+                 </div> 
+           
+           </div>
+                 <button class="botao">Generate password</button>
+         </div>
+      
+            <div class="textopassword">
+                <span class="title">The generated password is</span>
+                <span id="password" class="password">qwertyuikjhgfdsxcvbnmkoiutre</span>
+                <span class="copypassword">Copy password</span>
+            </div>
+
+    </div>
+
+</section>
+    
+
+
+
+
+
+<script src="main.js"></script>    
+</body>
+</html>
