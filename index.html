@@ -16,8 +16,8 @@
 
     <div class="main">
          <div class="gerador">
-                <h1>Password Generator</h1>
-                <span>Size <span id="valor"></span>characters</span>
+                <h1>Secure Password Generator</h1>
+                <span>Size <span id="valor"></span> characters</span>
                 <input id="slider" class="slider" type="range" min="5" max="30" value="10">
             <div class="verificar">
                 <div class="letrasminusculas">
@@ -41,13 +41,13 @@
                  </div> 
            
            </div>
-                 <button class="botao">Generate password</button>
+                 <button class="botao" onclick="clicarbotao()">Generate password</button>
          </div>
       
             <div class="textopassword">
                 <span class="title">The generated password is</span>
-                <span id="password" class="password">qwertyuikjhgfdsxcvbnmkoiutre</span>
-                <span class="copypassword">Copy password</span>
+                <span id="password" class="password" onclick="copiarpass()"></span>
+                <span class="copypassword">Click on the password to copy ☝️</span>
             </div>
 
     </div>
