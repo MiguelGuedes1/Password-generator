@@ -20,6 +20,13 @@ slider.oninput=function(){
  function clicarbotao(){
 
 let caracterespossiveis = "";
+
+    if (!maiusculas.checked && !minusculas.checked && !numeros.checked && !simbolos.checked) {    // ! é de negaçao se "" Nao estiver checked o programa faz algo
+    alert("Please select at least one option.");
+    return;
+    }
+
+    
     if (maiusculas.checked) {
         caracterespossiveis += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
@@ -39,6 +46,9 @@ let pass=''
              pass+=caracterespossiveis.charAt(Math.floor(Math.random() * n))     
         }
         boxpass.style.visibility = "visible";
+        if( password.innerHTML=0){
+            alert("escolhe algo")
+        }
         password.innerHTML=pass
         novasenha=pass
  }
@@ -47,3 +57,5 @@ let pass=''
     navigator.clipboard.writeText(novasenha)
     alert("Your password has been copied successfully")
  }
+
+ 
